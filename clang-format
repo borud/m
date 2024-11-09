@@ -1,0 +1,13 @@
+BasedOnStyle: LLVM
+IndentWidth: 4
+ColumnLimit: 150
+AllowShortFunctionsOnASingleLine: Empty
+BreakBeforeBinaryOperators: All
+PointerAlignment: Left
+BreakConstructorInitializers: BeforeComma
+ConstructorInitializerIndentWidth: 4
+
+BreakConstructorInitializersBeforeComma: true
+
+ConstructorInitializerAllOnOneLineOrOnePerLine: false
+BreakBeforeBraces: Stroustrup
