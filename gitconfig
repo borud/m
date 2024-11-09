@@ -1,0 +1,27 @@
+[color]
+        ui = true
+[alias]
+        st = status
+        ci = commit
+        co = checkout
+        graph = log --graph --pretty=oneline --abbrev-commit
+        tree = log --oneline --decorate=full --graph --remotes
+        lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+
+[push]
+        default = simple
+[filter "lfs"]
+        required = true
+        smudge = git-lfs smudge -- %f
+        process = git-lfs filter-process
+        clean = git-lfs clean -- %f
+[credential]
+        helper = osxkeychain
+
+[pull]
+        rebase = true
+        ff = only
+[url "ssh://git@github.com/"]
+        insteadOf = https://github.com/
+[init]
+        defaultBranch = main
